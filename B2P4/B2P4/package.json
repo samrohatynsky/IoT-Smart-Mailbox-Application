@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "cd android && gradlew app:assembleDebug && gradlew installDebug",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -12,6 +12,8 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.1",
+    "react-native-firebase": "^5.5.6",
+    "react-native-navigation": "^3.5.1",
     "react-native-tcp": "^3.3.1",
     "readable-stream": "^1.0.33",
     "stream-browserify": "^1.0.0"
